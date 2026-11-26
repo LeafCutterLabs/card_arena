@@ -1,0 +1,14 @@
+{
+  "decks": [
+    {
+      "id": "standard-52",
+      "name": "Standard 52 Playing Cards",
+      "description": "Classic 52-card poker deck for testing traditional and custom games."
+    },
+    {
+      "id": "prototype-alpha",
+      "name": "Prototype Alpha",
+      "description": "Custom 36-card action & ability deck with rules text for rapid prototyping."
+    }
+  ]
+}

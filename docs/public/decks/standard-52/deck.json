@@ -1,0 +1,476 @@
+{
+  "id": "standard-52",
+  "name": "Standard 52 Playing Cards",
+  "cardBack": "assets/back.webp",
+  "defaultTextColor": "#111827",
+  "cards": [
+    {
+      "templateId": "spades-a",
+      "count": 1,
+      "background": "assets/bg_default.webp",
+      "cornerValue": "A\u2660",
+      "title": "\u2660",
+      "rulesText": "",
+      "textColor": "#111827"
+    },
+    {
+      "templateId": "spades-2",
+      "count": 1,
+      "background": "assets/bg_default.webp",
+      "cornerValue": "2\u2660",
+      "title": "\u2660",
+      "rulesText": "",
+      "textColor": "#111827"
+    },
+    {
+      "templateId": "spades-3",
+      "count": 1,
+      "background": "assets/bg_default.webp",
+      "cornerValue": "3\u2660",
+      "title": "\u2660",
+      "rulesText": "",
+      "textColor": "#111827"
+    },
+    {
+      "templateId": "spades-4",
+      "count": 1,
+      "background": "assets/bg_default.webp",
+      "cornerValue": "4\u2660",
+      "title": "\u2660",
+      "rulesText": "",
+      "textColor": "#111827"
+    },
+    {
+      "templateId": "spades-5",
+      "count": 1,
+      "background": "assets/bg_default.webp",
+      "cornerValue": "5\u2660",
+      "title": "\u2660",
+      "rulesText": "",
+      "textColor": "#111827"
+    },
+    {
+      "templateId": "spades-6",
+      "count": 1,
+      "background": "assets/bg_default.webp",
+      "cornerValue": "6\u2660",
+      "title": "\u2660",
+      "rulesText": "",
+      "textColor": "#111827"
+    },
+    {
+      "templateId": "spades-7",
+      "count": 1,
+      "background": "assets/bg_default.webp",
+      "cornerValue": "7\u2660",
+      "title": "\u2660",
+      "rulesText": "",
+      "textColor": "#111827"
+    },
+    {
+      "templateId": "spades-8",
+      "count": 1,
+      "background": "assets/bg_default.webp",
+      "cornerValue": "8\u2660",
+      "title": "\u2660",
+      "rulesText": "",
+      "textColor": "#111827"
+    },
+    {
+      "templateId": "spades-9",
+      "count": 1,
+      "background": "assets/bg_default.webp",
+      "cornerValue": "9\u2660",
+      "title": "\u2660",
+      "rulesText": "",
+      "textColor": "#111827"
+    },
+    {
+      "templateId": "spades-10",
+      "count": 1,
+      "background": "assets/bg_default.webp",
+      "cornerValue": "10\u2660",
+      "title": "\u2660",
+      "rulesText": "",
+      "textColor": "#111827"
+    },
+    {
+      "templateId": "spades-j",
+      "count": 1,
+      "background": "assets/bg_default.webp",
+      "cornerValue": "J\u2660",
+      "title": "\u2660",
+      "rulesText": "",
+      "textColor": "#111827"
+    },
+    {
+      "templateId": "spades-q",
+      "count": 1,
+      "background": "assets/bg_default.webp",
+      "cornerValue": "Q\u2660",
+      "title": "\u2660",
+      "rulesText": "",
+      "textColor": "#111827"
+    },
+    {
+      "templateId": "spades-k",
+      "count": 1,
+      "background": "assets/bg_default.webp",
+      "cornerValue": "K\u2660",
+      "title": "\u2660",
+      "rulesText": "",
+      "textColor": "#111827"
+    },
+    {
+      "templateId": "hearts-a",
+      "count": 1,
+      "background": "assets/bg_default.webp",
+      "cornerValue": "A\u2665",
+      "title": "\u2665",
+      "rulesText": "",
+      "textColor": "#DC2626"
+    },
+    {
+      "templateId": "hearts-2",
+      "count": 1,
+      "background": "assets/bg_default.webp",
+      "cornerValue": "2\u2665",
+      "title": "\u2665",
+      "rulesText": "",
+      "textColor": "#DC2626"
+    },
+    {
+      "templateId": "hearts-3",
+      "count": 1,
+      "background": "assets/bg_default.webp",
+      "cornerValue": "3\u2665",
+      "title": "\u2665",
+      "rulesText": "",
+      "textColor": "#DC2626"
+    },
+    {
+      "templateId": "hearts-4",
+      "count": 1,
+      "background": "assets/bg_default.webp",
+      "cornerValue": "4\u2665",
+      "title": "\u2665",
+      "rulesText": "",
+      "textColor": "#DC2626"
+    },
+    {
+      "templateId": "hearts-5",
+      "count": 1,
+      "background": "assets/bg_default.webp",
+      "cornerValue": "5\u2665",
+      "title": "\u2665",
+      "rulesText": "",
+      "textColor": "#DC2626"
+    },
+    {
+      "templateId": "hearts-6",
+      "count": 1,
+      "background": "assets/bg_default.webp",
+      "cornerValue": "6\u2665",
+      "title": "\u2665",
+      "rulesText": "",
+      "textColor": "#DC2626"
+    },
+    {
+      "templateId": "hearts-7",
+      "count": 1,
+      "background": "assets/bg_default.webp",
+      "cornerValue": "7\u2665",
+      "title": "\u2665",
+      "rulesText": "",
+      "textColor": "#DC2626"
+    },
+    {
+      "templateId": "hearts-8",
+      "count": 1,
+      "background": "assets/bg_default.webp",
+      "cornerValue": "8\u2665",
+      "title": "\u2665",
+      "rulesText": "",
+      "textColor": "#DC2626"
+    },
+    {
+      "templateId": "hearts-9",
+      "count": 1,
+      "background": "assets/bg_default.webp",
+      "cornerValue": "9\u2665",
+      "title": "\u2665",
+      "rulesText": "",
+      "textColor": "#DC2626"
+    },
+    {
+      "templateId": "hearts-10",
+      "count": 1,
+      "background": "assets/bg_default.webp",
+      "cornerValue": "10\u2665",
+      "title": "\u2665",
+      "rulesText": "",
+      "textColor": "#DC2626"
+    },
+    {
+      "templateId": "hearts-j",
+      "count": 1,
+      "background": "assets/bg_default.webp",
+      "cornerValue": "J\u2665",
+      "title": "\u2665",
+      "rulesText": "",
+      "textColor": "#DC2626"
+    },
+    {
+      "templateId": "hearts-q",
+      "count": 1,
+      "background": "assets/bg_default.webp",
+      "cornerValue": "Q\u2665",
+      "title": "\u2665",
+      "rulesText": "",
+      "textColor": "#DC2626"
+    },
+    {
+      "templateId": "hearts-k",
+      "count": 1,
+      "background": "assets/bg_default.webp",
+      "cornerValue": "K\u2665",
+      "title": "\u2665",
+      "rulesText": "",
+      "textColor": "#DC2626"
+    },
+    {
+      "templateId": "diamonds-a",
+      "count": 1,
+      "background": "assets/bg_default.webp",
+      "cornerValue": "A\u2666",
+      "title": "\u2666",
+      "rulesText": "",
+      "textColor": "#DC2626"
+    },
+    {
+      "templateId": "diamonds-2",
+      "count": 1,
+      "background": "assets/bg_default.webp",
+      "cornerValue": "2\u2666",
+      "title": "\u2666",
+      "rulesText": "",
+      "textColor": "#DC2626"
+    },
+    {
+      "templateId": "diamonds-3",
+      "count": 1,
+      "background": "assets/bg_default.webp",
+      "cornerValue": "3\u2666",
+      "title": "\u2666",
+      "rulesText": "",
+      "textColor": "#DC2626"
+    },
+    {
+      "templateId": "diamonds-4",
+      "count": 1,
+      "background": "assets/bg_default.webp",
+      "cornerValue": "4\u2666",
+      "title": "\u2666",
+      "rulesText": "",
+      "textColor": "#DC2626"
+    },
+    {
+      "templateId": "diamonds-5",
+      "count": 1,
+      "background": "assets/bg_default.webp",
+      "cornerValue": "5\u2666",
+      "title": "\u2666",
+      "rulesText": "",
+      "textColor": "#DC2626"
+    },
+    {
+      "templateId": "diamonds-6",
+      "count": 1,
+      "background": "assets/bg_default.webp",
+      "cornerValue": "6\u2666",
+      "title": "\u2666",
+      "rulesText": "",
+      "textColor": "#DC2626"
+    },
+    {
+      "templateId": "diamonds-7",
+      "count": 1,
+      "background": "assets/bg_default.webp",
+      "cornerValue": "7\u2666",
+      "title": "\u2666",
+      "rulesText": "",
+      "textColor": "#DC2626"
+    },
+    {
+      "templateId": "diamonds-8",
+      "count": 1,
+      "background": "assets/bg_default.webp",
+      "cornerValue": "8\u2666",
+      "title": "\u2666",
+      "rulesText": "",
+      "textColor": "#DC2626"
+    },
+    {
+      "templateId": "diamonds-9",
+      "count": 1,
+      "background": "assets/bg_default.webp",
+      "cornerValue": "9\u2666",
+      "title": "\u2666",
+      "rulesText": "",
+      "textColor": "#DC2626"
+    },
+    {
+      "templateId": "diamonds-10",
+      "count": 1,
+      "background": "assets/bg_default.webp",
+      "cornerValue": "10\u2666",
+      "title": "\u2666",
+      "rulesText": "",
+      "textColor": "#DC2626"
+    },
+    {
+      "templateId": "diamonds-j",
+      "count": 1,
+      "background": "assets/bg_default.webp",
+      "cornerValue": "J\u2666",
+      "title": "\u2666",
+      "rulesText": "",
+      "textColor": "#DC2626"
+    },
+    {
+      "templateId": "diamonds-q",
+      "count": 1,
+      "background": "assets/bg_default.webp",
+      "cornerValue": "Q\u2666",
+      "title": "\u2666",
+      "rulesText": "",
+      "textColor": "#DC2626"
+    },
+    {
+      "templateId": "diamonds-k",
+      "count": 1,
+      "background": "assets/bg_default.webp",
+      "cornerValue": "K\u2666",
+      "title": "\u2666",
+      "rulesText": "",
+      "textColor": "#DC2626"
+    },
+    {
+      "templateId": "clubs-a",
+      "count": 1,
+      "background": "assets/bg_default.webp",
+      "cornerValue": "A\u2663",
+      "title": "\u2663",
+      "rulesText": "",
+      "textColor": "#111827"
+    },
+    {
+      "templateId": "clubs-2",
+      "count": 1,
+      "background": "assets/bg_default.webp",
+      "cornerValue": "2\u2663",
+      "title": "\u2663",
+      "rulesText": "",
+      "textColor": "#111827"
+    },
+    {
+      "templateId": "clubs-3",
+      "count": 1,
+      "background": "assets/bg_default.webp",
+      "cornerValue": "3\u2663",
+      "title": "\u2663",
+      "rulesText": "",
+      "textColor": "#111827"
+    },
+    {
+      "templateId": "clubs-4",
+      "count": 1,
+      "background": "assets/bg_default.webp",
+      "cornerValue": "4\u2663",
+      "title": "\u2663",
+      "rulesText": "",
+      "textColor": "#111827"
+    },
+    {
+      "templateId": "clubs-5",
+      "count": 1,
+      "background": "assets/bg_default.webp",
+      "cornerValue": "5\u2663",
+      "title": "\u2663",
+      "rulesText": "",
+      "textColor": "#111827"
+    },
+    {
+      "templateId": "clubs-6",
+      "count": 1,
+      "background": "assets/bg_default.webp",
+      "cornerValue": "6\u2663",
+      "title": "\u2663",
+      "rulesText": "",
+      "textColor": "#111827"
+    },
+    {
+      "templateId": "clubs-7",
+      "count": 1,
+      "background": "assets/bg_default.webp",
+      "cornerValue": "7\u2663",
+      "title": "\u2663",
+      "rulesText": "",
+      "textColor": "#111827"
+    },
+    {
+      "templateId": "clubs-8",
+      "count": 1,
+      "background": "assets/bg_default.webp",
+      "cornerValue": "8\u2663",
+      "title": "\u2663",
+      "rulesText": "",
+      "textColor": "#111827"
+    },
+    {
+      "templateId": "clubs-9",
+      "count": 1,
+      "background": "assets/bg_default.webp",
+      "cornerValue": "9\u2663",
+      "title": "\u2663",
+      "rulesText": "",
+      "textColor": "#111827"
+    },
+    {
+      "templateId": "clubs-10",
+      "count": 1,
+      "background": "assets/bg_default.webp",
+      "cornerValue": "10\u2663",
+      "title": "\u2663",
+      "rulesText": "",
+      "textColor": "#111827"
+    },
+    {
+      "templateId": "clubs-j",
+      "count": 1,
+      "background": "assets/bg_default.webp",
+      "cornerValue": "J\u2663",
+      "title": "\u2663",
+      "rulesText": "",
+      "textColor": "#111827"
+    },
+    {
+      "templateId": "clubs-q",
+      "count": 1,
+      "background": "assets/bg_default.webp",
+      "cornerValue": "Q\u2663",
+      "title": "\u2663",
+      "rulesText": "",
+      "textColor": "#111827"
+    },
+    {
+      "templateId": "clubs-k",
+      "count": 1,
+      "background": "assets/bg_default.webp",
+      "cornerValue": "K\u2663",
+      "title": "\u2663",
+      "rulesText": "",
+      "textColor": "#111827"
+    }
+  ]
+}

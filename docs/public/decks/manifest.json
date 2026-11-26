@@ -1,0 +1,9 @@
+{
+  "decks": [
+    {
+      "id": "standard-52",
+      "name": "Standard 52 Playing Cards",
+      "description": "Classic 52-card poker deck for testing traditional games."
+    }
+  ]
+}

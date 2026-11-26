@@ -1,0 +1,8 @@
+Read SPEC_OVERVIEW.md, ASSET_CONVENTION.md, and DATA_MODEL_AND_SYNC.md.
+
+Scaffold the complete Vite + React + TypeScript + Tailwind + PartyKit project in this directory, ready for local development and Netlify + PartyKit cloud deployment.
+
+Include:
+1. Full PartyKit room server (`party/gameRoom.ts`) implementing all actions in DATA_MODEL_AND_SYNC.md.
+2. Mobile-first React UI with Lobby, persistent Top Bar, private `HandView` (drag-to-reorder), and shared free-form `TableCanvas` (drag, snap-to-stack, stack menu, player badges).
+3. `CardRenderer` component that composites card back, background image, optional foreground art, and dynamic corner/title/rules text, with clean SVG/CSS fallback placeholders if an image file isn't present yet so `public/decks/standard-52/deck.json` works immediately out of the box.

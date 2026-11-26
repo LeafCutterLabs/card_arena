@@ -1,0 +1,108 @@
+{
+  "id": "prototype-alpha",
+  "name": "Prototype Alpha",
+  "cardBack": "assets/back.webp",
+  "defaultTextColor": "#F8FAFC",
+  "cards": [
+    {
+      "templateId": "fire-ember",
+      "count": 4,
+      "background": "assets/bg_red.webp",
+      "foregroundArt": "assets/art_flame.webp",
+      "cornerValue": "3",
+      "title": "EMBER",
+      "rulesText": "Deal 3 damage. Draw 1 card if another Fire card is on the table.",
+      "textColor": "#FFFFFF"
+    },
+    {
+      "templateId": "fire-flare",
+      "count": 3,
+      "background": "assets/bg_red.webp",
+      "foregroundArt": "assets/art_flare.webp",
+      "cornerValue": "5",
+      "title": "SOLAR FLARE",
+      "rulesText": "All other players discard 1 card face down.",
+      "textColor": "#FFFFFF"
+    },
+    {
+      "templateId": "water-tide",
+      "count": 4,
+      "background": "assets/bg_blue.webp",
+      "foregroundArt": "assets/art_wave.webp",
+      "cornerValue": "+2",
+      "title": "RISING TIDE",
+      "rulesText": "Draw 2 cards from the center deck.",
+      "textColor": "#FFFFFF"
+    },
+    {
+      "templateId": "water-shield",
+      "count": 4,
+      "background": "assets/bg_blue.webp",
+      "foregroundArt": "assets/art_shield.webp",
+      "cornerValue": "2",
+      "title": "WARD",
+      "rulesText": "Negate the last action card played against you.",
+      "textColor": "#FFFFFF"
+    },
+    {
+      "templateId": "forest-bloom",
+      "count": 4,
+      "background": "assets/bg_green.webp",
+      "foregroundArt": "assets/art_leaf.webp",
+      "cornerValue": "1",
+      "title": "BLOOM",
+      "rulesText": "Recover any 1 card from the discard pile to your hand.",
+      "textColor": "#FFFFFF"
+    },
+    {
+      "templateId": "forest-snare",
+      "count": 3,
+      "background": "assets/bg_green.webp",
+      "foregroundArt": "assets/art_vine.webp",
+      "cornerValue": "⊘",
+      "title": "SNARE",
+      "rulesText": "Target player skips their next turn.",
+      "textColor": "#FFFFFF"
+    },
+    {
+      "templateId": "gold-trade",
+      "count": 4,
+      "background": "assets/bg_gold.webp",
+      "foregroundArt": "assets/art_coin.webp",
+      "cornerValue": "⇄",
+      "title": "BARTER",
+      "rulesText": "Swap 1 card from your hand with any player.",
+      "textColor": "#1E1B4B"
+    },
+    {
+      "templateId": "gold-peek",
+      "count": 4,
+      "background": "assets/bg_gold.webp",
+      "foregroundArt": "assets/art_eye.webp",
+      "cornerValue": "👁",
+      "title": "SCOUT",
+      "rulesText": "Peek at the top 3 cards of the deck and rearrange them.",
+      "textColor": "#1E1B4B"
+    },
+    {
+      "templateId": "wild-chaos",
+      "count": 3,
+      "background": "assets/bg_purple.webp",
+      "foregroundArt": "assets/art_star.webp",
+      "cornerValue": "★",
+      "title": "WILD SHIFT",
+      "rulesText": "Counts as any element. Immediately take an extra turn.",
+      "textColor": "#FFFFFF"
+    },
+    {
+      "templateId": "void-reset",
+      "count": 3,
+      "background": "assets/bg_dark.webp",
+      "foregroundArt": "assets/art_void.webp",
+      "cornerValue": "0",
+      "title": "ECLIPSE",
+      "rulesText": "Flip all face-up cards on the table face down.",
+      "textColor": "#F8FAFC"
+    }
+  ]
+}
