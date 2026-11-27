@@ -2,18 +2,21 @@
 
 A mobile-first, rules-agnostic, real-time multiplayer card game sandbox for rapid prototyping and playtesting. Built with React, TypeScript, Tailwind CSS, Framer Motion, and PartyKit.
 
+## Multiplayer Architecture
+
+- **Default (Zero-Server WebRTC + BroadcastChannel):** Works out of the box on GitHub Pages with no backend required! The player who clicks **Create New Room** hosts the authoritative room state in their browser, while guests connect directly via PeerJS WebRTC DataChannels (and same-browser tabs sync instantaneously via `BroadcastChannel`).
+- **Optional PartyKit / PartyServer mode:** If you deploy a PartyServer / Cloudflare Workers backend and set `VITE_PARTYKIT_HOST` (or append `?transport=partykit` locally while running `npm run dev`), the app automatically switches to WebSocket transport.
+
 ## Local Development
 
 ```bash
 npm install
+npm run dev:client   # Zero-server WebRTC mode (http://localhost:5173)
+# Or run Vite + local PartyKit server together:
 npm run dev
 ```
 
-This starts both:
-- **Vite frontend:** `http://localhost:5173`
-- **PartyKit WebSocket server:** `http://localhost:1999`
-
-Open two browser tabs (or connect from a phone on the same LAN) to test real-time multiplayer synchronization.
+Open two browser tabs (or connect from a phone) to test real-time multiplayer synchronization.
 
 ## Adding Custom Decks
 

@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import { Layers, Plus, ArrowRight, Sparkles } from 'lucide-react';
 import { generateRoomCode, normalizeRoomCode } from '../lib/roomUtils';
+import type { RoomMode } from '../hooks/useGameRoom';
 
 interface LobbyProps {
   initialName: string;
   initialRoomCode?: string;
-  onEnterRoom: (roomCode: string, playerName: string) => void;
+  onEnterRoom: (roomCode: string, playerName: string, mode: RoomMode) => void;
 }
 
 export function Lobby({ initialName, initialRoomCode = '', onEnterRoom }: LobbyProps) {
@@ -27,7 +28,7 @@ export function Lobby({ initialName, initialRoomCode = '', onEnterRoom }: LobbyP
     const validName = validateName();
     if (!validName) return;
     const code = generateRoomCode();
-    onEnterRoom(code, validName);
+    onEnterRoom(code, validName, 'host');
   };
 
   const handleJoin = (e: React.FormEvent) => {
@@ -40,7 +41,7 @@ export function Lobby({ initialName, initialRoomCode = '', onEnterRoom }: LobbyP
       return;
     }
     setError(null);
-    onEnterRoom(normalized, validName);
+    onEnterRoom(normalized, validName, 'join');
   };
 
   return (
@@ -125,7 +126,7 @@ export function Lobby({ initialName, initialRoomCode = '', onEnterRoom }: LobbyP
 
         <div className="mt-6 flex items-center justify-center gap-1.5 text-xs text-slate-500">
           <Sparkles className="h-3.5 w-3.5 text-emerald-400/80" />
-          <span>Real-time sync via PartyKit · Mobile-first touch canvas</span>
+          <span>Zero-server WebRTC multiplayer · Mobile-first touch canvas</span>
         </div>
       </div>
     </div>

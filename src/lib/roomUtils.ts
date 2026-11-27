@@ -72,6 +72,16 @@ export function saveLocalHandOrder(roomCode: string, playerId: string, order: st
   }
 }
 
+export function shouldUsePartyKit(): boolean {
+  const envHost = import.meta.env.VITE_PARTYKIT_HOST as string | undefined;
+  if (envHost && envHost.trim().length > 0) return true;
+  if (typeof window !== 'undefined') {
+    const params = new URLSearchParams(window.location.search);
+    if (params.get('transport') === 'partykit') return true;
+  }
+  return false;
+}
+
 export function getPartyHost(): string {
   const envHost = import.meta.env.VITE_PARTYKIT_HOST as string | undefined;
   if (envHost && envHost.trim().length > 0) {

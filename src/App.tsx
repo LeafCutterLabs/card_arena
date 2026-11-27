@@ -8,7 +8,7 @@ import {
   normalizeRoomCode,
   savePlayerName,
 } from './lib/roomUtils';
-import { useGameRoom } from './hooks/useGameRoom';
+import { useGameRoom, type RoomMode } from './hooks/useGameRoom';
 import { Lobby } from './components/Lobby';
 import { TopBar, type ActiveView } from './components/TopBar';
 import { HandView } from './components/HandView';
@@ -26,6 +26,7 @@ export default function App() {
   const [playerId] = useState<string>(() => getOrCreatePlayerId());
   const [playerName, setPlayerName] = useState<string>(() => getSavedPlayerName());
   const [roomCode, setRoomCode] = useState<string | null>(null);
+  const [roomMode, setRoomMode] = useState<RoomMode>('host');
   const [initialUrlRoom] = useState<string>(() => getInitialRoomFromUrl());
   const [activeView, setActiveView] = useState<ActiveView>('TABLE');
   const [deck, setDeck] = useState<DeckDefinition | null>(null);
@@ -35,8 +36,9 @@ export default function App() {
     faceUp: boolean;
   } | null>(null);
 
-  const { roomState, status, lastError, send } = useGameRoom({
+  const { roomState, status, lastError, roomNotFound, send } = useGameRoom({
     roomCode,
+    mode: roomMode,
     playerId,
     playerName,
   });
@@ -107,9 +109,10 @@ export default function App() {
     [allCards],
   );
 
-  const handleEnterRoom = useCallback((code: string, name: string) => {
+  const handleEnterRoom = useCallback((code: string, name: string, mode: RoomMode) => {
     savePlayerName(name);
     setPlayerName(name);
+    setRoomMode(mode);
     setRoomCode(code);
     setActiveView('TABLE');
   }, []);
@@ -185,12 +188,41 @@ export default function App() {
 
       <main className="relative flex-1 overflow-hidden">
         {!roomState ? (
-          <div className="felt-table flex h-full w-full flex-col items-center justify-center gap-3 text-slate-300">
-            <Loader2 className="h-7 w-7 animate-spin text-emerald-400" />
-            <div className="text-sm font-medium">Connecting to room {roomCode}...</div>
-            <div className="text-xs text-slate-400">
-              Ensure PartyKit server is running (`npm run dev`)
-            </div>
+          <div className="felt-table flex h-full w-full flex-col items-center justify-center gap-3 px-6 text-center text-slate-300">
+            {!roomNotFound ? (
+              <>
+                <Loader2 className="h-7 w-7 animate-spin text-emerald-400" />
+                <div className="text-sm font-medium text-white">
+                  Connecting to room {roomCode}...
+                </div>
+                <div className="max-w-xs text-xs text-slate-400">
+                  Establishing peer-to-peer WebRTC link with the room host.
+                </div>
+              </>
+            ) : (
+              <div className="w-full max-w-sm rounded-3xl border border-white/10 bg-slate-950/85 p-5 shadow-2xl backdrop-blur-xl">
+                <div className="text-base font-bold text-white">Room {roomCode} not found</div>
+                <p className="mt-1.5 text-xs text-slate-400">
+                  No active host was found for code <span className="font-mono font-bold text-emerald-400">{roomCode}</span>. Ask the host to keep the room open, or host it yourself.
+                </p>
+                <div className="mt-4 flex flex-col gap-2">
+                  <button
+                    type="button"
+                    onClick={() => setRoomMode('host')}
+                    className="w-full rounded-xl bg-emerald-500 px-4 py-2.5 text-sm font-bold text-slate-950 transition active:scale-95 hover:bg-emerald-400"
+                  >
+                    Host Room {roomCode} Instead
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setRoomCode(null)}
+                    className="w-full rounded-xl border border-white/10 bg-slate-900 px-4 py-2.5 text-sm font-semibold text-slate-200 transition hover:bg-slate-800"
+                  >
+                    Back to Lobby
+                  </button>
+                </div>
+              </div>
+            )}
           </div>
         ) : activeView === 'HAND' ? (
           <HandView
